@@ -8,5 +8,9 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+        GameEntry bond = new GameEntry("Ian",854);
+
+        System.out.println();
+
     }
 }

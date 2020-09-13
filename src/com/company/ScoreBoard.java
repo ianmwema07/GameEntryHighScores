@@ -31,6 +31,9 @@ public class ScoreBoard {
         GameEntry temp = board[i]; //Save the object to be removed
         for (int j = i;j< numEntries - 1;j++) //Count up from i (not down)
             board[j]=board[j+1];  //move out the old last score
+        board[numEntries - 1] = null;
+        numEntries--;
+        return temp;
     }
 }
 
